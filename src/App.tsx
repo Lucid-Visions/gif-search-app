@@ -18,7 +18,7 @@ function App() {
     setGif(result.data.data.map((o: any) => o.images['preview_gif'].url))
   }
 
-  const imageList = gifs.length > 0 && gifs.map(gif => <img key={gif} src={gif} />)
+  const imageList = gifs.length > 0 && gifs.map(gif => <img key={gif} src={gif} alt="Image from Giphy" />)
 
   return (
     <div className="App">
